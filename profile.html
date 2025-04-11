@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Express - Profile</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/1694914d74.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Book Express Main/Logo.png" alt="Book Express Logo" class="book-express-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fs-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="input-group w-25">
+                        <input type="text" class="form-control" placeholder="search book" aria-label="search bar">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-image"><a href="cart.html" class="no-underline"><img src="images/icons/cart.png" class="nav-image" alt="cart"></a></li>
+                        <li class="nav-image"><a href="profile.html" class="no-underline"><img src="images/icons/profile.png" class="nav-image" alt="profile"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow rounded-4 p-4">
+                    <h2 class="text-center mb-4">Hello, Ian Kyril!</h2>
+        
+                    <!-- Profile Picture Section -->
+                    <div class="text-center mb-4">
+                        <img src="images/Book Express Main/profile.jpg" alt="Profile Picture" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="mt-2">
+                            <input type="file" id="profile-pic" class="form-control d-inline-block w-auto">
+                        </div>
+                    </div>
+        
+                    <!-- Toggle Tabs -->
+                    <ul class="nav nav-tabs mb-3" id="profileTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders" type="button" role="tab">Orders</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab">Personal Info</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="payment-tab" data-bs-toggle="tab" data-bs-target="#payment" type="button" role="tab">Payment Info</button>
+                        </li>
+                    </ul>
+        
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="profileTabsContent">
+                        <!-- Orders -->
+                        <div class="tab-pane fade show active" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+                            <h4>Your Orders</h4>
+                            <ul id="order-list">
+                                <!-- Order items will be injected here dynamically using JavaScript -->
+                            </ul>
+                        </div>
+        
+                        <!-- Personal Info -->
+                        <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+                            <h4>Personal Information</h4>
+                            <div id="personal-info">
+                                <p><strong>Full Name:</strong> Ian Kyril Carino</p>
+                                <p><strong>Email Address:</strong> iankyril.g.carino@gmail.com</p>
+                                <p><strong>Phone Number:</strong> 09270333063</p>
+                                <p><strong>Home Address:</strong> Parisas Street, Camp 7, Baguio City</p>
+                                <button class="btn btn-warning" id="edit-personal-btn">Edit</button>
+                            </div>
+
+                            <!-- Edit Personal Info Form (hidden by default) -->
+                            <div id="edit-personal-form" style="display: none;">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="edit-name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="edit-name" value="Ian Kyril Carino">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="edit-email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="edit-email" value="iankyril.g.carino@gmail.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="edit-phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="edit-phone" value="09270333063">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="edit-address" class="form-label">Home Address</label>
+                                        <input type="text" class="form-control" id="edit-address" value="Parisas Street, Camp 7, Baguio City">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                                </form>
+                            </div>
+                        </div>
+        
+                        <!-- Payment Info -->
+                        <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+                            <h4>Payment Information</h4>
+                            <div id="payment-info">
+                                <p><strong>Cardholder Name:</strong> Ian Kyril Carino</p>
+                                <p><strong>Card Number:</strong> •••• •••• •••• 1234</p>
+                                <p><strong>Expiry Date:</strong> 08/28</p>
+                                <p><strong>CVV:</strong> ***</p>
+                                <button class="btn btn-warning" id="edit-payment-btn">Edit</button>
+                            </div>
+
+                            <!-- Edit Payment Info Form (hidden by default) -->
+                            <div id="edit-payment-form" style="display: none;">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="edit-card-name" class="form-label">Cardholder Name</label>
+                                        <input type="text" class="form-control" id="edit-card-name" value="Ian Kyril Carino">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="edit-card-number" class="form-label">Card Number</label>
+                                        <input type="text" class="form-control" id="edit-card-number" value="•••• •••• •••• 1234">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="edit-expiry" class="form-label">Expiry Date</label>
+                                        <input type="text" class="form-control" id="edit-expiry" value="08/28">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="edit-cvv" class="form-label">CVV</label>
+                                        <input type="text" class="form-control" id="edit-cvv" value="***">
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Update Payment</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Terms & Condition Modal -->
+    <dialog id="terms-modal">
+        <div class="popup-content">
+            <a href="#" class="close-btn">×</a>
+            <img src="images/Book Express Main/Logo.png" alt="Book Express Logo" class="book-express-logo">
+            <h3>Terms & Conditions</h3>
+            <p>By using Book Express, you agree to the following terms...</p>
+        </div>
+    </dialog>
+    
+    <!-- Privacy Policy Modal -->
+    <dialog id="privacy-modal">
+        <div class="popup-content">
+            <a href="#" class="close-btn">×</a>
+            <img src="images/Book Express Main/Logo.png" alt="Book Express Logo" class="book-express-logo">
+            <h3>Privacy Policy</h3>
+            <p>We collect and use your data to process orders...</p>
+        </div>
+    </dialog>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#terms-modal" class="footer-link"><strong><u>TERMS & CONDITIONS</u></strong></a>
+            <span class="divider">|</span>
+            <a href="#privacy-modal" class="footer-link"><strong><u>PRIVACY POLICY</u></strong></a>
+        </div>
+        <div class="footer-socials">
+            <img href="mailto:iankyril.g.carino@gmail.com" src="images/icons/mail.png" class="socials-image" alt="email">
+            <a href="https://www.facebook.com/profile.php?id=100016874686970">
+                <img src="images/icons/facebook.png" class="socials-image" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/thatdudeisian/#">
+                <img src="images/icons/insta.png" class="socials-image" alt="instagram">
+            </a>
+        </div>
+        <small class="copyright">©2025. Book Express Commerce. All rights reserved.</small>
+    </footer>
+
+</body>
+</html>

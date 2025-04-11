@@ -1,0 +1,626 @@
+
+/* Center the "Add to Cart" button */
+.product-card-compact__btn-wrapper {
+    text-align: center; /* Horizontally center the content */
+}
+
+/* If the button needs additional centering due to its own width: */
+.btn-add-to-cart {
+    margin: 0 auto; /* Centers the button if it's not already a block-level element */
+    display: block; /* Ensures the margin auto works correctly */
+}
+
+body {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.book-express-logo {
+    width: 200px;
+    height: auto;
+}
+
+.book-express-logo-placeholder {
+    width: 800px;
+    height: auto;
+}
+
+.book-express-bg-info {
+    background-color: rgb(111, 238, 238);
+}
+
+.mb-4 {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.no-underline {
+    text-decoration: none; /* Removes the underline */
+}
+
+.navbar-nav .nav-image {
+    margin: 0 15px; 
+}
+
+.nav-image{
+    width: 35px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-image:hover {
+    transform: scale(1.1); 
+    filter: grayscale(50%); 
+}
+
+.btn-add-to-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 16px;
+    background-image: linear-gradient(to bottom, lightcoral 0%, lightcoral 100%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-add-to-cart:hover {
+    background-image: linear-gradient(to bottom, crimson 0%, crimson 100%);
+}
+
+.price {
+    color: lightcoral;
+    margin-top: 20px;
+}
+
+.fantasy-genre {
+    background-image: linear-gradient(170.41deg, #4289FF -10.89%, #3F07F8 92.77%);
+}
+
+.mystery-thriller {
+    background-image: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
+}
+
+.genre-contemporary {
+    background-image: linear-gradient(152.07deg, #FF9C35 1.47%, #FFD019 97.17%);
+}
+
+.young-adult {
+    background-image: linear-gradient(170.41deg, #3F07F8 -10.89%, #4289FF 92.77%);
+}
+
+.classics {
+    background-image: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
+}
+.discover {
+    background-image: linear-gradient(152.07deg, #FF9C35 1.47%, #FFD019 97.17%);
+}
+
+.all-categories {
+    background-color: #F4F4F4;
+    padding: 10px 0 20px;
+}
+
+.personal-contact {
+    align-items: center;
+    justify-content: left;
+}
+
+#fantasy-genre,
+#genre-mystery-thriller,
+#genre-contemporary,
+#young-adult,
+#classics {
+    margin-top: 60px !important;
+    margin-bottom: 45px;
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: blue;
+}
+
+.divider {
+    font-weight: bold;
+}
+
+.copyright {
+    margin-top: 5px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    width: 100%; 
+}
+
+.socials-image{
+    width: 65px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.socials-image:hover {
+    transform: scale(1.1); 
+    filter: grayscale(50%); 
+}
+
+/*Footer*/
+
+dialog {
+    width: 50%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: left;
+    width: 100%;
+}
+
+.popup-content p {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#terms-modal:target,
+#privacy-modal:target,
+#placeholder-modal:target,
+#contact-modal:target {
+    display: flex;
+}
+
+.footer-socials .socials-image {
+    width: 30px;
+    height: auto;
+  }
+
+/*CHAT POP UP*/
+
+.chat-icon {
+    position: fixed;
+    bottom: 50px;
+    right: 130px;
+    z-index: 1000;
+    background: transparent;  
+    padding: 0;  
+    border: none; 
+}
+
+.chat-icon img {
+    width: 80px;  
+    height: auto;  
+    display: block; 
+    background: transparent;  
+    border: none; 
+    box-shadow: none; 
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.chat-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* CSS TO SUPPORT MOBILE VIEW*/
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .input-group.w-25 {
+        width: 100% !important;
+    }
+
+    .book-express-logo {
+        width: 150px;
+    }
+
+    .carousel-item .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-item .col-lg-7, .carousel-item .col-lg-4 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .carousel-item img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .container .row {
+        flex-direction: column;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .btn-buy-now, .btn-add-to-cart {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .socials {
+        flex-direction: column;
+    }
+
+    .chat-icon {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    dialog {
+        width: 90%;
+    }
+}
+
+
+/* COMPACT PRODUCT LISTING STYLES */
+.compact-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+    height: 100%;
+}
+
+.compact-card:hover {
+    transform: translateY(-5px);
+}
+
+.compact-card__img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.compact-card__title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.compact-card__author {
+    font-size: 0.75rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.compact-card__price {
+    font-size: 0.9rem;
+    color: lightcoral;
+    margin-bottom: 12px;
+}
+
+.product-card-compact__btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/*  -- */
+
+.custom-page-link {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-page-link:hover,
+.custom-page-link:focus {
+    background-color: lightcoral;
+    color: white;
+}
+
+.custom-page-link:active,
+.page-item.active .custom-page-link {
+    background-color: lightcoral;
+    color: white;
+}
+
+/* Adjusting the container for shipping, membership, and COD sections */
+
+.w-4.h-4.mx-auto.mb-2 {
+    width: 40px; /* Adjust size if needed */
+    height: 40px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 600px; /* Set a max width for the form */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Styling for input fields */
+.form-input {
+    width: 48%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the send button */
+.send-button {
+    width: 100%; 
+    padding: 15px; 
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: lightcoral; /* Change color on hover */
+}
+
+
+/* Book container for each cart item */
+.cart-item input.cart-checkbox {
+    transform: scale(1.5); /* makes checkbox bigger */
+    margin-right: 16px;    /* space between checkbox and image */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 150px;  /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.item-details {
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.item-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.item-actions p {
+    margin-bottom: 0.5rem; /* Space above the Buy Now button */
+}
+
+.buy-now-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 0.5rem; /* Space below the Buy Now button */
+}
+
+.remove-item {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Popup for add-to-cart notification */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(29, 83, 29);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Animation for popup */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Checkout button highlighting */
+#checkout-btn {
+    transition: background-color 0.3s ease;
+}
+
+/* CSS for the check-out and price b*/
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-end {
+    align-items: flex-end; /* Aligns items to the right */
+}
+
+/* Optional: if you want to specifically style the checkout button */
+#checkout-btn {
+    transition: background-color 0.3s ease;
+    color: black; /* Use color property for text color */
+    background-color: grey; 
+}
+
+#checkout-btn:hover {
+    background-color: lightcoral; /* Change color on hover */
+}
+
+/* Additional styles for spacing */
+.mt-2 {
+    margin-top: 0.5rem; /* Adjust spacing between total and button */
+}
+
+/* Style the container with a light blue background */
+.book-express-bg-info {
+    background-color: lightcyan;
+}
+
+/*Payment Modal*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+  }  
+  
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+/*Orders*/
+
+.order-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.order-item .order-status {
+    font-weight: bold;
+    color: #ff6347; /* Red color for status */
+}

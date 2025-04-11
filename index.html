@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- IAN KYRIL CARINO | LANDING PAGE PROJECT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Express- Home</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Book Express Main/Logo.png" alt="Book Express Logo" class="book-express-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fs-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="products.html">Products</a>
+                            </strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </strong>
+                        </li>
+                    </ul>
+                    <div class="input-group w-25">
+                        <input type="text" class="form-control" placeholder="search book" aria-label="search bar"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-image">
+                            <a href="cart.html" class="no-underline">
+                                <img src="images/icons/cart.png" class="nav-image" alt="cart">
+                            </a>   
+                        </li>
+                        <li class="nav-image">
+                            <a href="profile.html" class="no-underline">
+                                <img src="images/icons/profile.png" class="nav-image" alt="profile">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- PROMOTED BOOKS CAROUSEL-->
+        <div class="container mt-3 mb-5">
+            <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded-3">
+                    <div class="carousel-item active">
+                        <div class="row book-express-bg-info p-5 d-flex align-items-center compact-card">
+                            <div class="col-lg-7 ps-5">
+                                <h1 class="fw-bold mb-3 compact-card__title" style="font-size: 2.5rem;">Wind and Truth</h1>
+                                <p class="compact-card__author" style="font-size: 1.5rem;">Brandon Sanderson</p>
+                                <p class="mb-4">
+                                    <strong>The long-awaited explosive climax to the first arc of the #1 New York Times bestselling Stormlight Archive―
+                                        the iconic epic fantasy masterpiece that has sold more than 10 million copies,
+                                        from acclaimed bestselling author Brandon Sanderson.</strong>
+                                </p>
+                                <p>
+                                    Dalinar Kholin challenged the evil god Odium to a contest with Roshar’s future at stake. With only ten days to prepare,
+                                    Taravangian’s sudden rise to replace Odium has thrown everything into chaos.
+                                    Worldwide battles rage—Adolin in Azir, Sigzil and Venli at the Shattered Plains, and Jasnah in Thaylenah.
+                                    Szeth, alongside Kaladin, must free Shinovar from the Unmade’s influence while battling personal demons.
+                                    Meanwhile, Shallan, Renarin, and Rlain investigate Ba-Ado-Mishram’s role in enslaving singers and the fall of the Knights Radiant.
+                                    Dalinar and Navani seek an advantage against Odium’s champion in the Spiritual Realm,
+                                    where memory and possibility collide. The fate of the Cosmere is on the line.
+                                </p>
+                                <h1 class="price fw-semibold compact-card__price" style="font-size: 2.5rem;">₱2,199.00</h1>
+                                <div class="mb-4 mx-auto">
+                                    <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="images/banner-images/Wind and Truth.jpg" class="card-img-top" alt="Wind and Truth">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row book-express-bg-info p-5 d-flex align-items-center compact-card">
+                            <div class="col-lg-7 ps-5">
+                                <h1 class="fw-bold mb-3 compact-card__title" style="font-size: 2.5rem;">Fourth Wing</h1>
+                                <p class="compact-card__author" style="font-size: 1.5rem;">Rebecca Yaros</p> 
+                                <p class="mb-4">
+                                    <strong>Enter the brutal and elite world of a war college for dragon riders...</strong>
+                                </p>
+                                <p>
+                                    Violet Sorrengail is a young woman who is forced by her mother, a military general,
+                                    to give up her goal of becoming a scribe and to instead enroll to be trained as an elite dragon rider.
+                                    The training of dragon riders is brutal and competitive, with only a fraction of the cadets making it through
+                                    the first year of their training. Their goal is to bond with a dragon so they can be bestowed with the powers
+                                    that bond holds ... or to die trying. Meanwhile, uprisings and attacks upon their kingdom and its borders
+                                    have steadily increased, and Violet's training will soon plunge her into a political and military landscape
+                                    that is complex and potentially deadly.
+                                </p>
+                                <h1 class="price fw-semibold compact-card__price">₱1,699.00</h1>
+                                <div class="mb-4 mx-auto">
+                                    <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="images/banner-images/FourthWing.jpg" class="card-img-top" alt="Fourth Wing">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row book-express-bg-info p-5 d-flex align-items-center compact-card">
+                            <div class="col-lg-7 ps-5">
+                                <h1 class="fw-bold mb-3 compact-card__title" style="font-size: 2.5rem;">Red Queen</h1>
+                                <p class="compact-card__author" style="font-size: 1.5rem;">Victoria Aveyard</p>
+                                <p class="mb-4">
+                                    <strong>This is a world divided by blood—red or silver.</strong>
+                                </p>
+                                <p>
+                                    The Reds are commoners, ruled by a Silver elite in possession of god-like superpowers. And to Mare Barrow,
+                                    a seventeen-year-old Red girl from the poverty-stricken Stilts, it seems like nothing will ever change.
+                                    That is until she finds herself working in the Silver Palace. Here, surrounded by the people she hates the most,
+                                    Mare discovers that, despite her red blood, she possesses a deadly power of her own.
+                                    One that threatens to destroy the balance of power.
+                                    Fearful of Mare's potential, the Silvers hide her in plain view, declaring her a long-lost Silver princess,
+                                    now engaged to a Silver prince. Despite knowing that one misstep would mean her death, Mare works silently to
+                                    help the Red Guard, a militant resistance group, and bring down the Silver regime.
+                                    But this is a world of betrayal and lies, and Mare has entered a dangerous dance—Reds against Silvers, prince against prince, and Mare against her own heart.
+                                </p>
+                                <h1 class="price fw-semibold compact-card__price">₱1,499.00</h1>
+                                <div class="mb-4 mx-auto">
+                                    <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="images/banner-images/Red Queen.jpg" class="card-img-top" alt="Red Queen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BROWSE BOOKS-->
+    <main>
+        <!-- GENRE/CATEGORIES BANNER-->
+        <div class="container my-5">
+            <h2 class="fw-semibold mb-3">OUR TOP PICKS!</h2>
+            <div class="row g-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="#fantasy-genre" class="text-decoration-none">
+                        <div class="p-3 border bg-primary text-light d-flex align-items-center justify-content-around rounded-3 fantasy-genre">
+                            <h2 class="fw-semibold">Fantasy</h2>
+                            <img class="w-25" src="images/categories/Fantasy.png" alt="Fantasy Icon">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="#genre-mystery-thriller" class="text-decoration-none">
+                        <div class="p-3 border bg-success text-light d-flex align-items-center justify-content-around rounded-3 mystery-thriller">
+                            <h2 class="fw-semibold">Mystery/Thriller</h2>
+                            <img class="w-25" src="images/categories/Mystery.png" alt="Mystery Icon">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="#genre-contemporary" class="text-decoration-none">
+                        <div class="p-3 border bg-warning text-light d-flex align-items-center justify-content-around rounded-3 contemporary">
+                            <h2 class="fw-semibold">Contemporary</h2>
+                            <img class="w-25" src="images/categories/Contemporary.png" alt="Contemporary icon">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="#young-adult" class="text-decoration-none">
+                        <div class="p-3 border bg-warning text-light d-flex align-items-center justify-content-around rounded-3 young-adult">
+                            <h2 class="fw-semibold">Young Adult</h2>
+                            <img class="w-25" src="images/categories/YA.png" alt="Ya icon">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="#classics" class="text-decoration-none">
+                        <div class="p-3 border bg-warning text-light d-flex align-items-center justify-content-around rounded-3 classics">
+                            <h2 class="fw-semibold">Classics</h2>
+                            <img class="w-25" src="images/categories/classics.png" alt="Classics icon">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="#discover" class="text-decoration-none">
+                        <div class="p-3 border bg-warning text-light d-flex align-items-center justify-content-around rounded-3 discover">
+                            <h2 class="fw-semibold">Discover</h2>
+                            <img class="w-25" src="images/categories/discover.png" alt="Discover icon">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- GENRE Fantasy -->
+        <section id="fantasy-genre" class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-semibold mb-3">FANTASY</h2>
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sort by
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="sortDropdown">
+                        <li><span class="dropdown-item-text">Best Sellers</span></li>
+                        <li><span class="dropdown-item-text">Price: Low to High</span></li>
+                        <li><span class="dropdown-item-text">Price: High to Low</span></li>
+                        <li><span class="dropdown-item-text">Newest</span></li>
+                        <li><span class="dropdown-item-text">In Stock</span></li>
+                        <li><span class="dropdown-item-text">Out of Stock</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/fantasy/Apprentice.jpg" alt="Assassins' Apprentice" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">Assassin's Apprentice</h6>
+                            <p class="compact-card__author"><strong>Robin Hobb</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱1,499.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/fantasy/Royal.jpg" alt="Royal Assassin" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">Royal Assassin</h6>
+                            <p class="compact-card__author"><strong>Robin Hobb</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱1,499.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/fantasy/Quest.jpg" alt="Assassin's Quest" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">Assassin's Quest</h6>
+                            <p class="compact-card__author"><strong>Robin Hobb</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱1,499.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    
+        <!-- GENRE Mystery/Thriller -->
+        <section id="genre-mystery-thriller" class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-semibold mb-3">MYSTERY/THRILLER</h2>
+                <h5 class="fw-semibold text-warning">See more...</h5>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/mystery-thriller/Final Girls.jpg" alt="FINAL GIRLS" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">Final Girls</h6>
+                            <p class="compact-card__author"><strong>Riley Sager</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱999.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/mystery-thriller/Silent Patient.jpg" alt="SILENT PATIENT" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">The Silent Patient</h6>
+                            <p class="compact-card__author"><strong>Alex Michaelides</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱899.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/mystery-thriller/Housemaid.jpg" alt="THE HOUSEMAID" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">The Housemaid</h6>
+                            <p class="compact-card__author"><strong>Freida McFadden</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱1,199.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GENRE Contemporary -->
+        <section id="genre-contemporary" class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-semibold mb-3">CONTEMPORARY</h2>
+                <h5 class="fw-semibold text-warning">See more...</h5>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/contemporary/A Little Life.jpg" alt="A LITTLE LIFE" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">A Little Life</h6>
+                            <p class="compact-card__author"><strong>Hanya Yanagihara</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱1,299.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/contemporary/normal people.jpg" alt="NORMAL PEOPLE" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">Normal People</h6>
+                            <p class="compact-card__author"><strong>Sally Rooney</strong> | Paperback</p>
+                            <h6 class="compact-card__price">₱699.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/contemporary/tomorrow.jpg" alt="TOMORROW AND TOMORROW AND TOMORROW" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">Tomorrow, Tomorrow, and Tomorrow</h6>
+                            <p class="compact-card__author"><strong>Gabriell Zevin</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱1,199.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GENRE Young Adult -->
+        <section id="young-adult" class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-semibold mb-3">YOUNG ADULT</h2>
+                <h5 class="fw-semibold text-warning">See more...</h5>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/young adult/A Language of Dragons.jpg" alt="A LANGUAGE OF DRAGONS" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">A Language of Dargons</h6>
+                            <p class="compact-card__author"><strong>S.F Williamson</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱1,399.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/young adult/Ember in the Ashes.jpg" alt="AN EMBER IN THE ASHES" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">An Ember in the Ashes</h6>
+                            <p class="compact-card__author"><strong>Sabaa Tahir</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱1,299.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/young adult/Six of Crows.jpg" alt="SIX OF CROWS" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">Six of Crows</h6>
+                            <p class="compact-card__author"><strong>Leigh Bardugo</strong> | Hardcover</p>
+                            <h6 class="compact-card__price">₱1,799.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Classics -->
+        <section id="classics" class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-semibold mb-3">CLASSICS</h2>
+                <h5 class="fw-semibold text-warning">See more...</h5>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/classics/Pride and Prejudice.jpg" alt="PRIDE AND PREJUDICE" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">Pride and Prejudice</h6>
+                            <p class="compact-card__author"><strong>Jane Austen</strong> | Mass Paperback</p>
+                            <h6 class="compact-card__price">₱199.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/classics/Monte Cristo.jpg" alt="THE COUNT OF MONTE CRISTO" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">The Count of Monte Cristo</h6>
+                            <p class="compact-card__author"><strong>Alexandre Dumas</strong> | Mass Paperback</p>
+                            <h6 class="compact-card__price">₱199.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="compact-card">
+                        <img src="images/classics/Dorian Gray.jpg" alt="THE PICTURE OF DORIAN GRAY" class="card-img-top">
+                        <div class="compact-card__body">
+                            <h6 class="compact-card__title">The Picture of Dorian Gray</h6>
+                            <p class="compact-card__author"><strong>Oscar Wilde</strong> | Mass Paperback</p>
+                            <h6 class="compact-card__price">₱199.00</h6>
+                            <div class="product-card-compact__btn-wrapper">
+                                <button type="button" class="btn-add-to-cart">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's Get In Touch -->
+        <section id="subscribe" style="height: 450px;"
+            class="container my-5 book-express-bg-info rounded-3 d-flex justify-content-center align-items-center">
+            <div class="text-center">
+                <h3 class="fw-bold">LET'S STAY IN TOUCH</h3>
+                <h6 class="text-secondary">Get updates on sales and new releases. </h6>
+                <div class="input-group mt-4 mb-3">
+                    <input type="text" class="form-control fs-5 ps-4 pe-5 py-2" placeholder="Enter your email"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn-buy-now mt-0 px-5 text-capitalize" type="button" id="button-addon2">Send</button>
+                </div>
+
+                <div>
+                    <h5 class="fw-bold">OUR SOCIALS</h3>
+                    <div class="socials">
+                        <img href="mailto:iankyril.g.carino@gmail.com" src="images/icons/mail.png" class="socials-image" alt="email" >
+
+                        <a href="https://www.facebook.com/profile.php?id=100016874686970">
+                            <img src="images/icons/facebook.png" class="socials-image" alt="facebook" >
+                        </a>
+
+                        <a href="https://www.instagram.com/thatdudeisian/#">
+                            <img src="images/icons/insta.png"  class="socials-image" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <a href="#contact-modal" class="chat-icon">
+        <img src="images/icons/chat.png" alt="Chat Icon">
+    </a>
+
+    <!--Contact Button-->
+    <dialog id="contact-modal">
+    <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="images/Book Express Main/Logo.png" class="book-express-logo" alt="book express logo">
+        <h1>LET'S GET IN TOUCH</h1>
+        <div class="text-center">
+            <h3 class="fw-bold">CONTACT US</h3>
+
+            <div class="input-group mt-4 mb-3">
+                <input type="text" class="form-control fs-5 ps-4 pe-5 py-2" placeholder="Enter your message"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn-buy-now mt-0 px-5 text-capitalize" type="button" id="button-addon2">Send</button>
+            </div>
+
+            <div>
+                <h5 class="fw-bold">OUR SOCIALS</h3>
+                <div class="socials">
+                    <img href="mailto:iankyril.g.carino@gmail.com"src="images/icons/mail.png" class="socials-image" alt="email" >
+
+                    <a href="https://www.facebook.com/profile.php?id=100016874686970">
+                        <img src="images/icons/facebook.png" class="socials-image" alt="facebook" >
+                    </a>
+
+                    <a href="https://www.instagram.com/thatdudeisian/#">
+                        <img src="images/icons/insta.png"  class="socials-image" alt="instagram">
+                    </a>
+                </div>
+            </div>
+            
+            <br>
+
+            📧 <a href="mailto:iankyril.g.carino@gmail.com">iankyril.g.carino@gmail.com</a> <br>
+            📞 <a href="tel:+639270333063">09270333063</a></p>  
+    </dialog>
+
+    <!-- Terms & Condition-->
+    <dialog id="terms-modal">
+        <div class="popup-content">
+            <a href="#" class="close-btn">&times;</a>
+
+            <img src="images/Book Express Main/Logo.png" alt="Book Express Logo" class="book-express-logo">
+            
+            <h3>Terms & Conditions</h3>
+            <p>
+
+                <p>By using Book Express, you agree to the following terms:</p>
+            
+                <p><strong>1. Use of Services:</strong><br>
+                ✔ Our platform allows you to browse, purchase books, and access related services.<br>
+                ✔ You must be at least 18 years old or have parental consent to use our services.</p>
+            
+                <p><strong>2. Orders & Payments:</strong><br>
+                ✔ All purchases are final. Ensure accuracy before completing your order.<br>
+                ✔ Payments are securely processed through third-party providers. We do not store payment details.</p>
+            
+                <p><strong>3. Returns & Refunds:</strong><br>
+                ✔ Returns are accepted within 14 days for damaged or incorrect items.<br>
+                ✔ Refunds are processed after item inspection.</p>
+            
+                <p><strong>4. Privacy & Data Security:</strong><br>
+                ✔ We collect personal data only for order fulfillment and support.<br>
+                ✔ Your information is protected under our <a href="#privacy-modal">Privacy Policy</a>.</p>
+
+                <small class="copyright">©2025. Book Express Commerce. All rights reserved.</small>
+            
+            </p>
+        </div>
+    </dialog>
+    
+    <!-- Privacy Policy -->
+    <dialog id="privacy-modal">
+        <div class="popup-content">
+            <a href="#" class="close-btn">&times;</a>
+
+            <img src="images/Book Express Main/Logo.png" alt="Book Express Logo" class="book-express-logo">
+
+            <h3>Privacy Policy</h3>
+            
+            <p>We collect and use your data to process orders, provide support, and improve services.</p>
+            
+            <p><strong>What We Collect:</strong><br>
+            ✅ Personal: Name, email, phone, address, payment details (securely processed).<br>
+            ✅ Non-Personal: Browser info, IP address, site usage.</p>
+            
+            <p><strong>How We Use It:</strong><br>
+            ✔ Order fulfillment<br>
+            ✔ Support & updates (opt-out anytime)<br>
+            ✔ Site analytics</p>
+            
+            <p><strong>Data Protection:</strong> Secure encryption & restricted access.</p>
+            
+            <p><strong>We Don’t Sell Your Data.</strong> Shared only with shipping/payment providers & legal authorities (if required).</p>
+            
+            <p><strong>Cookies:</strong> Used for login, cart, and analytics. Disable in browser settings.</p>
+            
+            <p><strong>Your Rights:</strong> Access, update, delete, or opt-out of marketing anytime.</p>
+
+            <small class="copyright">©2025. Book Express Commerce. All rights reserved.</small>
+                    
+        </div>
+    </dialog>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#terms-modal" class="footer-link"><strong><u>TERMS & CONDITIONS</u></strong></a>
+            <span class="divider">|</span>
+            <a href="#privacy-modal" class="footer-link"><strong><u>PRIVACY POLICY</u></strong></a>
+        </div>
+        <small class="copyright">©2025. Book Express Commerce. All rights reserved.</small>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1694914d74.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
